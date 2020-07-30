@@ -1,0 +1,36 @@
+[data-block=Table] {
+	display: flex;
+	justify-content: center;
+}
+
+[data-block=Table] table, 
+[data-block=Table] th,
+[data-block=Table] td {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+
+[data-block=Table] th {
+	text-align: inherit;
+}
+
+[data-block=Table] caption {
+	padding: .5em;
+	caption-side: bottom;
+	text-align: center;
+}
+
+[data-block=Table] th,
+[data-block=Table] td {
+	padding: .5em;
+}
+
+[data-block=Table] th p:first-child,
+[data-block=Table] td p:first-child {
+	margin-top: 0;
+}
+
+[data-block=Table] th p:last-child,
+[data-block=Table] td p:last-child {
+	margin-bottom: 0;
+}

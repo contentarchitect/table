@@ -1,0 +1,27 @@
+{
+  "name": "@contentarchitect/table",
+  "version": "0.0.0",
+  "description": "Table block for ContentArchitect",
+  "main": "dist/table.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contentarchitect/table.git"
+  },
+  "keywords": [
+    "table",
+    "editor"
+  ],
+  "author": "Cihad Paksoy <cihadp@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/contentarchitect/table/issues"
+  },
+  "homepage": "https://github.com/contentarchitect/table#readme",
+  "devDependencies": {
+    "rollup-plugin-vue": "^5",
+    "rollup-plugin-vue-inline-svg": "^1.1.1"
+  }
+}
