@@ -1,6 +1,6 @@
 {
   "name": "@contentarchitect/table",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Table block for ContentArchitect",
   "main": "dist/table.js",
   "browser": "dist/table.min.js",
