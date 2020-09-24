@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "description": "Table block for ContentArchitect",
   "main": "dist/table.js",
+  "browser": "dist/table.min.js",
+  "jsdelivr": "dist/table.min.js",
   "scripts": {
     "build": "rollup -c"
   },
@@ -21,6 +23,7 @@
   },
   "homepage": "https://github.com/contentarchitect/table#readme",
   "devDependencies": {
+    "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-vue": "^5",
     "rollup-plugin-vue-inline-svg": "^1.1.1"
   }
