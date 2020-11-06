@@ -2,30 +2,52 @@
 	<css-grid :columns="['2fr', '3fr']" gap="8px 0">
 		<label for="">Cols</label>
 		<div class="table-control">
-			<v-button @click="decreaseColsCount">-</v-button>
+			<sp-action-button @click="decreaseColsCount">
+				<sp-icon :icon="$options.components.Remove"></sp-icon>
+			</sp-action-button>
 			<span>{{cols}}</span>
-			<v-button @click="increaseColsCount">+</v-button>
+			<sp-action-button @click="increaseColsCount">
+				<sp-icon :icon="$options.components.Add"></sp-icon>
+			</sp-action-button>
 		</div>
 
 		<label for="">Rows</label>
 		<div class="table-control">
-			<v-button @click="decreaseRowsCount">-</v-button>
+			<sp-action-button @click="decreaseRowsCount">
+				<sp-icon :icon="$options.components.Remove"></sp-icon>
+			</sp-action-button>
 			<span>{{rows}}</span>
-			<v-button @click="increaseRowsCount">+</v-button>
+			<sp-action-button @click="increaseRowsCount">
+				<sp-icon :icon="$options.components.Add"></sp-icon>
+			</sp-action-button>
 		</div>
 
 		<label for="">Table head</label>
 		<div class="table-control">
-			<input type="checkbox" v-model="value.thead" />
+			<sp-switch v-model="value.thead" />
 		</div>
 	</css-grid>
 </template>
 
 <script>
-import { CssGrid, CaInput, Button } from "@contentarchitect/editor"
+import {
+	CssGrid,
+	SpSwitch,
+	SpIcon,
+	SpActionButton
+} from "@contentarchitect/editor"
+import Add from 'vue-spectrum-workflow-icons/dist/Add'
+import Remove from 'vue-spectrum-workflow-icons/dist/Remove'
 
 export default {
-	components: { CssGrid, CaInput, "v-button": Button },
+	components: {
+		CssGrid,
+		SpSwitch,
+		SpIcon,
+		SpActionButton,
+		Add,
+		Remove,
+	},
 	props: ['value'],
 	data () {
 		return {
@@ -64,7 +86,7 @@ export default {
 <style scoped>
 .table-control {
 	display: flex;
-	align-items: stretch;
+	align-items: center;
 }
 
 .table-control span {
